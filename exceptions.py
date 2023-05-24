@@ -1,0 +1,2 @@
+class UnsuccessfulServerResponseError(Exception):
+    pass

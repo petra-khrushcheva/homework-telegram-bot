@@ -1,2 +1,2 @@
-class UnsuccessfulServerResponseError(Exception):
+class NoServerResponseError(Exception):
     pass

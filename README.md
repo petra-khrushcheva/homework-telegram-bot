@@ -23,6 +23,7 @@ cd homework-telegram-bot
 ```
 
 Cоздайте и активируйте виртуальное окружение.
+
 Cоздайте .env-файл и укажите в нем по образцу PRACTICUM_TOKEN (получить токен можно по адресу: https://oauth.yandex.ru/authorize?response_type=token&client_id=1d0b9dd4d652455a9eb710d450ff456a), TELEGRAM_TOKEN (токен созданного вами бота), TELEGRAM_CHAT_ID (ваш chat id).
 
 Установите зависимости из файла requirements.txt:

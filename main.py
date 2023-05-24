@@ -7,7 +7,7 @@ import requests
 import telegram
 from dotenv import load_dotenv
 from http import HTTPStatus
-from exceptions import UnsuccessfulServerResponseError
+from exceptions import NoServerResponseError
 
 load_dotenv()
 
@@ -57,7 +57,7 @@ def get_api_answer(current_timestamp):
     except requests.RequestException('Неуспешный запрос к серверу') as error:
         logging.error({error})
     if response.status_code != HTTPStatus.OK:
-        raise UnsuccessfulServerResponseError(
+        raise NoServerResponseError(
             'Ответ сервера не является успешным:'
             f' request params = {params};'
             f' http_code = {response.status_code};'
